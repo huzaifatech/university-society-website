@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - SAFE HITMS</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<nav>
+		<img src="img/logo.png" class="logo" alt="SAFE Logo">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="Menu">
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="home">
+		<h2>Contact SAFE HITMS</h2>
+		<p>We would love to hear from you! Reach out to us with your queries, feedback, or suggestions, and our team will get back to you promptly.</p>
+	</section>
+
+	<!-- Contact Form Section -->
+	<section id="registration">
+		<div class="form">
+			<h2>Send Us a Message</h2>
+
+			<input type="text" placeholder="Your Name" name="" id="">
+			<input type="email" placeholder="Email ID" name="" id="">
+			<input type="text" placeholder="Subject" name="" id="">
+			<textarea placeholder="Your Message" rows="6"></textarea>
+
+			<div class="btn">
+				<a href="#" class="yellow">Submit Message</a>
+			</div>
+		</div>
+
+		<div class="form">
+			<h2>Our Contact Info</h2>
+			<p><i class="fas fa-map-marker-alt"></i> AIRD, Latifabad Unit no.6, Hyderabad, Sindh</p>
+			<p><i class="fas fa-phone"></i> +92 302 0352326</p>
+			<p><i class="fas fa-envelope"></i> info@safehitms.com</p>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="copyright">
+			<p>
+				Copyright @ 2026 All rights reserved | Made by <a href="https://www.linkedin.com/in/huzaifatech/" target="_blank">Huzaifa</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const menuBtn = document.getElementById("menu-btn");
+			const menuClose = document.getElementById("menu-close");
+			const menu = document.querySelector("nav .navigation ul");
+
+			menuBtn.addEventListener("click", function () {
+				menu.classList.add("active");
+			});
+
+			menuClose.addEventListener("click", function () {
+				menu.classList.remove("active");
+			});
+		});
+	</script>
+
+</body>
+</html>

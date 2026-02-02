@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery - SAFE HITMS</title>
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<nav>
+		<img src="img/logo.png" class="logo" alt="SAFE Logo">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="gallery.html" class="active">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="Menu">
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="home">
+		<h2>Our Gallery</h2>
+		<p>Take a glimpse at our events, workshops, competitions, and student activities that make SAFE HITMS vibrant and engaging.</p>
+	</section>
+
+	<!-- Gallery Section -->
+	<section id="gallery">
+		<h1>Gallery Highlights</h1>
+		<p>Here are some moments captured from our past events and classes.</p>
+
+		<div class="g-box">
+			<div class="g-content">
+				<img src="img/c1.jpg" alt="Hackathon">
+				<div class="details">
+					<span>21-Jan-2022</span>
+					<h6>Hackathon</h6>
+				</div>
+			</div>
+
+			<div class="g-content">
+				<img src="img/c2.jpg" alt="Book Fair">
+				<div class="details">
+					<span>21-Jan-2022</span>
+					<h6>Book Fair</h6>
+				</div>
+			</div>
+
+			<div class="g-content">
+				<img src="img/c3.jpg" alt="Teachers Day">
+				<div class="details">
+					<span>21-Jan-2022</span>
+					<h6>Teachers Day</h6>
+				</div>
+			</div>
+
+			<div class="g-content">
+				<img src="img/c4.jpg" alt="Futsal Tournament">
+				<div class="details">
+					<span>21-Jan-2022</span>
+					<h6>Futsal Tournament</h6>
+				</div>
+			</div>
+
+			<div class="g-content">
+				<img src="img/c5.jpg" alt="English Language Course">
+				<div class="details">
+					<span>21-Jan-2022</span>
+					<h6>English Language Course</h6>
+				</div>
+			</div>
+
+			<div class="g-content">
+				<img src="img/c6.webp" alt="Cricket Tournament">
+				<div class="details">
+					<span>21-Jan-2022</span>
+					<h6>Cricket Tournament</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="copyright">
+			<p>
+				Copyright @ 2026 All rights reserved | Made by <a href="https://www.linkedin.com/in/huzaifatech/" target="_blank">Huzaifa</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const menuBtn = document.getElementById("menu-btn");
+			const menuClose = document.getElementById("menu-close");
+			const menu = document.querySelector("nav .navigation ul");
+
+			menuBtn.addEventListener("click", function () {
+				menu.classList.add("active");
+			});
+
+			menuClose.addEventListener("click", function () {
+				menu.classList.remove("active");
+			});
+		});
+	</script>
+
+</body>
+</html>

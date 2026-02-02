@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services - SAFE HITMS</title>
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<nav>
+		<img src="img/logo.png" class="logo" alt="SAFE Logo">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html" class="active">Services</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="Menu">
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="home">
+		<h2>Our Services</h2>
+		<p>SAFE HITMS provides a variety of services designed to support students academically, develop their skills, and enhance their overall learning experience.</p>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services">
+		<h1>What We Offer</h1>
+		<p>We are committed to providing quality educational services, mentorship, and student support programs to empower students at every stage.</p>
+
+		<div class="ser-base">
+			<div class="ser-box">
+				<i class="fas fa-chalkboard-teacher"></i>
+				<h3>Tutoring & Academic Support</h3>
+				<p>One-on-one or group tutoring for different subjects, exam preparation, and learning guidance to ensure academic success.</p>
+			</div>
+
+			<div class="ser-box">
+				<i class="fas fa-graduation-cap"></i>
+				<h3>Scholarship Programs</h3>
+				<p>Need-based and merit-based scholarships to support talented students and remove financial barriers to education.</p>
+			</div>
+
+			<div class="ser-box">
+				<i class="fas fa-lightbulb"></i>
+				<h3>Workshops & Seminars</h3>
+				<p>Regular workshops, seminars, and guest lectures to provide practical knowledge and soft skills development.</p>
+			</div>
+
+			<div class="ser-box">
+				<i class="fas fa-futbol"></i>
+				<h3>Co-Curricular Activities</h3>
+				<p>Sports, competitions, debates, and events that help students build confidence, leadership, and teamwork skills.</p>
+			</div>
+
+			<div class="ser-box">
+				<i class="fas fa-laptop-code"></i>
+				<h3>Technical Courses</h3>
+				<p>Programming, IT, and technology-based courses to enhance digital literacy and practical skills.</p>
+			</div>
+
+			<div class="ser-box">
+				<i class="fas fa-users"></i>
+				<h3>Mentorship & Guidance</h3>
+				<p>Continuous mentorship and guidance for career planning, personal development, and goal setting.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="copyright">
+			<p>
+				Copyright @ 2026 All rights reserved | Made by <a href="https://www.linkedin.com/in/huzaifatech/" target="_blank">Huzaifa</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const menuBtn = document.getElementById("menu-btn");
+			const menuClose = document.getElementById("menu-close");
+			const menu = document.querySelector("nav .navigation ul");
+
+			menuBtn.addEventListener("click", function () {
+				menu.classList.add("active");
+			});
+
+			menuClose.addEventListener("click", function () {
+				menu.classList.remove("active");
+			});
+		});
+	</script>
+
+</body>
+</html>
